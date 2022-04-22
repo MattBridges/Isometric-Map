@@ -50,9 +50,9 @@ function CreateTile(locX, locY, spriteTexture, selectorTexture){
         //Make clickTricger interactable and add evvents
         clickTrigger.interactive = true;
         clickTrigger.buttonMode = true;
-        clickTrigger.on('pointerdown', event=> OnClick(sprite));
-        clickTrigger.on('pointerover', event=> OnPointerOver(sprite,selectorSprite));
-        clickTrigger.on('pointerout', event=> OnPointerOut(sprite, selectorSprite));
+        clickTrigger.on('pointerdown', event=> OnClick(tileSprite));
+        clickTrigger.on('pointerover', event=> OnPointerOver(tileSprite,selectorSprite));
+        clickTrigger.on('pointerout', event=> OnPointerOut(tileSprite, selectorSprite));
 
      //Add tile components to screen
      app.stage.addChild(tileSprite);
