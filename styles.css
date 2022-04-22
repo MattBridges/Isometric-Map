@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+}
+
+canvas{
+    display: block;
+    background: blue;
+}
+
+#display>*{
+    border: 1px dashed black;
+}
